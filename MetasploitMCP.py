@@ -154,7 +154,7 @@ async def check_msf_connection() -> Dict[str, Any]:
         }
 
 @contextlib.asynccontextmanager
-async def get_msf_console() -> MsfConsole:
+async def get_msf_console() -> MsfConsole: # type: ignore
     """
     Async context manager for creating and reliably destroying an MSF console.
     """
